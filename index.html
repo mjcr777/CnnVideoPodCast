@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+/**
+ *
+ * @author mau777
+ */
+-->
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>WebApp: CNN Video Pod Cast</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/player.css" />		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://www.google.com/jsapi"></script>
+	<script>
+		google.load("feeds", "1");
+	</script>
+	
+	<script src="lib/jquery.jcarousel.min.js"></script>
+	<script src="lib/mustache.min.js"></script>
+	
+	<script src="js/main.js"></script>
+	<script src="js/playerController.js"></script>
+	<script src="js/rssController.js"></script>
+	<script src="js/carouselController.js"></script>
+	<script src="js/videoController.js"></script>
+	<script src="js/keyController.js"></script>
+</head>
+<body>	
+	<div id="main-wrapper">
+		<div id="main-content">
+			<header id="main-header">
+		  		<hgroup>
+		    		<h1 id="player-title" class="header-title ellipsis"></h1>
+		    		<h2 id="player-description" class="header-title ellipsis"></h2>
+		  		</hgroup>
+			</header>
+			
+			<section id="carousel-wrapper" class="main-section-wrapper">
+			
+				<div class="carousel-btn-wrapper">
+					<div id="prev-btn" class="jcarousel-prev carousel-btn-content">
+						<div class="carousel-btn">
+							<img src="images/up.png" />
+						</div>
+					</div>
+				</div>
+				
+				<div id="carousel" class="jcarousel">
+	    			<ul id="carousel-list">
+	    			</ul>
+				</div>
+	    		
+	    		<div class="carousel-btn-wrapper carousel-btn-wrapper-down">
+		    		<div id="next-btn" class="jcarousel-next carousel-btn-content">
+		    			<div class="carousel-btn">
+		    				<img src="images/down.png" />
+		    			</div>
+		    		</div>
+				</div>
+				
+			</section>
+			
+			<section id="video-wrapper" class="main-section-wrapper">
+			
+				<div id="video-content">
+				
+					<video width="546" height="420" controls id="video">
+						Your browser does not support the video tag.
+					</video>
+				
+				</div>
+				
+				<div id="current-clip-wrapper">
+					<p id="current-clip"></p>
+				</div>
+			</section>
+			<footer></footer>
+		</div>
+	</div>
+</body>
+</html>

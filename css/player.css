@@ -1,0 +1,154 @@
+/*main-wrapper*/
+#main-wrapper{
+	width: 1280px;
+	height: 720px;
+	margin: 20px auto;
+	background-color: silver;
+}
+
+#main-content{
+	padding: 30px;
+
+}
+
+/* header */
+#main-header{
+	margin-bottom: 30px;
+}
+#main-header .header-title{
+	padding: 10px 0;
+}
+
+#player-title{
+	font-size: 30px;
+        color: darkred;
+}
+
+
+#player-description{
+	font-size: 20px;
+	font-style: italic;	
+}
+
+
+
+/* video player */
+#video-wrapper{
+	float: right;
+}
+
+#video-content{
+	border: solid 1px beige;
+	border-radius: 5px;
+	width: 546px;
+	height: 420px;
+	padding: 10px;
+}
+
+#current-clip-wrapper{
+	border: solid 1px b;
+	border-radius: 5px;
+	margin-top:10px;
+	width: 566px;
+}
+
+#current-clip{
+	max-height:50px;
+	min-height:32px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+
+
+/* carousel */
+#carousel-wrapper{
+	float: left;	
+	width: 600px;
+	margin-left: 20px;
+	margin-top: 15px;
+	height: 490px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.jcarousel ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#carousel-list li{
+	height: 70px;
+	border: solid 2px transparent;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top:5px;
+}
+
+#carousel-list li.selected{
+	border-color: black;
+}
+
+#carousel-list li div{
+	height: 40px;
+	border-radius: 5px;
+	vertical-align: middle;
+	padding:15px;
+	background-color: beige;
+}
+
+#carousel-list p.item-title{
+	font-size: 20px;	
+}
+
+#carousel-list p.item-date{
+	font-style: italic;	
+}
+
+.carousel-btn-wrapper{
+	width: 100%;
+	background-color: transparent;
+}
+
+.carousel-btn-content{
+	border: solid 2px transparent;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.carousel-btn-content.selected{
+	border-color: gold;
+}
+
+.carousel-btn{
+	border-radius: 5px;
+	padding: 2px;
+	background-color: goldenrod;
+}
+
+.carousel-btn img{
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+/*common styles*/
+.ellipsis{
+	white-space:nowrap; 
+	width:100%; 
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+
+
