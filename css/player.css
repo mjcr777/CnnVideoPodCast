@@ -4,6 +4,10 @@
 	height: 720px;
 	margin: 20px auto;
 	background-color: silver;
+	background: -webkit-radial-gradient(beige, silver);
+	background: -moz-radial-gradient(beige, silver);
+	background: -o-radial-gradient(beige, silver);
+	background: radial-gradient(beige, silver);
 }
 
 #main-content{
